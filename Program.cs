@@ -7,6 +7,7 @@ internal class Program
 
 
         bool winCondion = false;
+        bool loseCondition = false;
         Console.WriteLine("What is your name?");
 
         string Name = Console.ReadLine();
@@ -61,12 +62,13 @@ internal class Program
                 else if ((procceed == true) && (testValue != 2))
                 {
                     winCondion = false;
+                    loseCondition = true;
                 }
                 else
                 {
-                    winCondion = false;
+                  //  winCondion = false;
                 }
-                Console.WriteLine(testValue); //Just observing the values throughout the questions
+                Console.WriteLine($"{testValue}, {winCondion}, {loseCondition}"); //Just observing the values throughout the questions
             }
                 Console.WriteLine("You leave the house, as you are getting in your car, you can't remember if you shut off the stove. Go back and check? (Yes/No)");
             //Trying to make Yes/No as valid boolion
@@ -96,12 +98,13 @@ internal class Program
                 else if ((procceed == true) && (testValue != 1))
                 {
                     winCondion = false;
+                    loseCondition = true;
                 }
                 else
                 {
-                    winCondion = false;
+                  //  winCondion = false;
                 }
-                Console.WriteLine(testValue); //Just observing the values throughout the questions
+                Console.WriteLine($"{testValue}, {winCondion}, {loseCondition}"); //Just observing the values throughout the questions
             }
                 Console.WriteLine("You leave the house, as you are getting in your car, you can't remember if you shut off the stove. Go back and check? (Yes/No)");
             //Trying to make Yes/No as valid boolion
@@ -131,12 +134,13 @@ internal class Program
                 else if ((procceed == true) && (testValue != 3))
                 {
                     winCondion = false;
+                    loseCondition = true;
                 }
                 else
                 {
-                    winCondion = false;
+                  //  winCondion = false;
                 }
-                Console.WriteLine(testValue); //Just observing the values throughout the questions
+                Console.WriteLine($"{testValue}, {winCondion}, {loseCondition}"); //Just observing the values throughout the questions
             }
                 Console.WriteLine("You leave the house, as you are getting in your car, you can't remember if you shut off the stove. Go back and check? (Yes/No)");
                 //Trying to make Yes/No as valid boolion
@@ -166,13 +170,14 @@ internal class Program
                     else if ((procceed == true) && (testValue != 4))
                     {
                         winCondion = false;
+                        loseCondition =true;
                     }
                     else
                     {
-                        winCondion = false;
+                       // winCondion = false;
                     }
-                Console.WriteLine(testValue); //Just observing the values throughout the questions
-                if (winCondion == true) { Console.WriteLine($"Congratulations!{Name} You won! WINNER GANON!"); }
+                Console.WriteLine($"{ testValue}, { winCondion}, { loseCondition}"); //Just observing the values throughout the questions
+                if (winCondion == true && loseCondition == false) { Console.WriteLine($"Congratulations!{Name} You won! WINNER GANON!"); }
                 else {
                     Console.WriteLine("Game Over, try again!");
                             }
