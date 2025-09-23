@@ -39,12 +39,12 @@ internal class Program
 
                 bool procceed = false;
 
-                if (userResponse == "yes")
+                if (userResponse == "no")
                 {
                     procceed = true;
                 }
 
-                else if (userResponse == "no")
+                else if (userResponse == "yes")
                 {
                     procceed = false;
                 }
@@ -75,12 +75,12 @@ internal class Program
             {
                 string userResponse = Console.ReadLine().ToLower();
                 bool procceed = false;
-                if (userResponse == "yes")
+                if (userResponse == "no")
                 {
                     procceed = true;
                 }
 
-                else if (userResponse == "no")
+                else if (userResponse == "yes")
                 {
                     procceed = false;
                 }
@@ -111,12 +111,12 @@ internal class Program
             {
                 string userResponse = Console.ReadLine().ToLower();
                 bool procceed = false;
-                if (userResponse == "yes")
+                if (userResponse == "no")
                 {
                     procceed = true;
                 }
 
-                else if (userResponse == "no")
+                else if (userResponse == "yes")
                 {
                     procceed = false;
                 }
@@ -147,12 +147,12 @@ internal class Program
                 {
                     string userResponse = Console.ReadLine().ToLower();
                     bool procceed = false;
-                    if (userResponse == "yes")
+                    if (userResponse == "no")
                     {
                         procceed = true;
                     }
 
-                    else if (userResponse == "no")
+                    else if (userResponse == "yes")
                     {
                         procceed = false;
                     }
