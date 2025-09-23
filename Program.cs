@@ -1,4 +1,6 @@
 ﻿//Asking Name
+using System.ComponentModel.Design;
+
 Console.WriteLine("What is your name?");
 
 string Name = Console.ReadLine();
@@ -20,3 +22,27 @@ else if (testValue > 4)
     int newChoice = int.Parse(chosenNumber);
 }
 
+Console.WriteLine("Thank you for choosing a number. \nYou wake up . . . insert morning routine");
+Console.WriteLine("question 1 (Yes/No)");
+//Trying to make Yes/No as valid boolion
+{
+    string firstResponse = Console.ReadLine();
+
+    bool procceed;
+
+    if (firstResponse == "Yes")
+    {  
+        procceed = true; 
+    }
+    
+    else if (firstResponse == "No")
+    {  
+        procceed = false; 
+    }
+    else
+    {
+        Console.WriteLine("Please only type 'Yes' or 'No'. ");
+    }
+
+
+}
