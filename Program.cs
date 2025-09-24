@@ -1,4 +1,4 @@
-
+﻿
 internal class Program
 {
     private static void Main(string[] args)
@@ -7,14 +7,14 @@ internal class Program
 
         bool winCondion = false;
         bool loseCondition = false;
-        Console.WriteLine("What is your name?");
+        Console.WriteLine("What is your name?\n");
 
         string Name = Console.ReadLine();
-        Console.WriteLine($"Greetings {Name}, \nYou are driving to work when you start questioning to yourself what you did this morning. \nYou were so tired you couldn't remember.\nTo you, it feels like you suddenly appeared in your car. \nSuddenly, you feel like you're forgetting something and must recall what you did otherwise it can have disastrous consequences.");
-        Console.WriteLine();
+        Console.WriteLine(""); // spacing out the text
+        Console.WriteLine($"Greetings {Name}, \nYou are driving to work when you start questioning to yourself what you did this morning. \nYou were so tired you couldn't remember.\nTo you, it feels like you suddenly appeared in your car. \nSuddenly, you feel like you're forgetting something and must recall what you did otherwise it can have disastrous- \nconsequences.\n");
         {
             //Picking a number betweeen 1 and 4
-            Console.WriteLine("Pick one of the 4 scenarios that you can remember from some point in your life:");
+            Console.WriteLine("Pick one of the 4 scenarios that you can remember from some point in your life:\n");
 
             Console.WriteLine("1. You wake up to sounds of the city, cars honking and random people shouting. \nYou quickly chow down your breakfast of bacon and eggs before going out and getting a little exercise with your pup. \nAfter returning you make sure to take your meds, grab your keys and head out the door.\n");
 
@@ -75,13 +75,12 @@ internal class Program
                 }
                 else
                 {
-                  //  winCondion = false;
+                  //  winCondion = false; //after changes to idea, this was no longer needed
                 }
-                Console.WriteLine($"{testValue}, {winCondion}, {loseCondition}"); //Just observing the values throughout the questions
+                //Console.WriteLine($"{testValue}, {winCondion}, {loseCondition}"); //Just observing the boolion values throughout the questions
             }
 
-                Console.WriteLine("You leave the house, as you are getting in your car, you can't remember if you shut off the stove. Go back and check? (Yes/No)");
-            //Trying to make Yes/No as valid boolion
+                Console.WriteLine("The Stove is off. (Yes/No)");
             {
                 string userResponse = Console.ReadLine().ToLower();
                 bool procceed = false;
@@ -112,7 +111,7 @@ internal class Program
                 }
                 else
                 {
-                  //  winCondion = false;
+                  //  winCondion = false; //changed idea
                 }
                 // Console.WriteLine($"{testValue}, {winCondion}, {loseCondition}"); //bool values
             }
@@ -149,13 +148,13 @@ internal class Program
                 }
                 else
                 {
-                  //  winCondion = false;
+                  //  winCondion = false; //changed idea
                 }
                 Console.WriteLine($"{testValue}, {winCondion}, {loseCondition}"); //Bool values
             }
 
                 Console.WriteLine("Meds have been taken. (Yes/No)");
-                //Trying to make Yes/No as valid boolion
+
                 {
                     string userResponse = Console.ReadLine().ToLower();
                     bool procceed = false;
@@ -186,11 +185,11 @@ internal class Program
                     }
                     else
                     {
-                       // winCondion = false;
+                       // winCondion = false; //changed idea
                     }
                     //Console.WriteLine($"{ testValue}, { winCondion}, { loseCondition}"); //bool value check
                     if (winCondion == true && loseCondition == false) { Console.WriteLine($"Congratulations {Name}! You figured it out!"); }
-                else {
+                    else {
                     Console.WriteLine("Good try! Please play again!");
                             }
 
