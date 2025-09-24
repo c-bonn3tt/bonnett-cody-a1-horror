@@ -189,6 +189,7 @@ internal class Program
                        // winCondion = false; //changed idea
                     }
                     //Console.WriteLine($"{ testValue}, { winCondion}, { loseCondition}"); //bool value check
+                    //End verdict
                     if (winCondion == true && loseCondition == false) { Console.WriteLine($"Congratulations {Name}! You figured it out!"); }
                     else {
                     Console.WriteLine("Good try! Please play again!");
