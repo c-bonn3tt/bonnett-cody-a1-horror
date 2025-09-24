@@ -25,6 +25,7 @@ internal class Program
             Console.WriteLine("4. You suddenly woke up in your car and can't remember what you did this morning.\n");
 
             Console.WriteLine("Pick by typing the corresponding number below (e.g '1'):");
+
             string chosenNumber = Console.ReadLine();
             int testValue = int.Parse(chosenNumber);
             if (testValue < 1)
